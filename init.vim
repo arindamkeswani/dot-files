@@ -5,12 +5,6 @@
 
 set nocompatible
 filetype off
-set number
-set relativenumber
-set tabstop=4
-set shiftwidth=4
-set autoindent
-set mouse=a
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -29,3 +23,22 @@ call plug#end()
 
 colorscheme gruvbox
 nnoremap <C-n> :NERDTree<CR>
+
+filetype plugin indent on "required
+syntax on
+set colorcolumn=100
+set background=dark
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+set number
+set nowrap
+set smartcase
+set hlsearch
+set noerrorbells
+set relativenumber
+set tabstop=4 softtabstop=4
+set expandtab
+set shiftwidth=4
+set autoindent
+set mouse=a
+
+
